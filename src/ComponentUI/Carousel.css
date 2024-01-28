@@ -1,0 +1,18 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  column-gap: 2vh;
+  align-items: center;
+  width: 100%;
+}
+.carousel__btn {
+  height: 4vh;
+  width: 4vw;
+}
+
+.btn-change {
+}
+.carousel__img {
+  height: 60vh;
+  width: 80vw;
+}
