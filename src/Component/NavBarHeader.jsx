@@ -6,11 +6,11 @@ function NavBarHeader() {
   return (
     <div>
       <div className="logo">
-        <img src={logo} />
+        <img src={logo} alt="image problem" />
       </div>
       <BrowserRouter>
         <div className="nav-bar">
-          <NavLink to={"/"} >Home</NavLink>
+          <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/store"}> store</NavLink>
           <NavLink to={"/macbook"}>Macbook</NavLink>
           <NavLink to={"/iphone"}>Iphone</NavLink>

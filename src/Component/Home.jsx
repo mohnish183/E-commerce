@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../ComponentUI/Home.css";
 import Car_img1 from "../miscellaneous/corousel_1.png";
 import Car_img2 from "../miscellaneous/corousel_2.png";
