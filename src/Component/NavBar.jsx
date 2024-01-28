@@ -6,12 +6,9 @@ import Macbook from "./Macbook";
 import Ipad from "./Ipad";
 import Iphone from "./Iphone";
 import Accessories from "./Accessories";
-import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function NavBar() {
-  let a = useParams();
-  console.log(a);
   return (
     <BrowserRouter>
       <Routes>

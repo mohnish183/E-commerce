@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 
 export const HomeData = createContext();
 function Store(props) {
-  const [homeData, setHomeData] = useState([
+  const [homeData] = useState([
     {
       id: "1",
       img: "../Products/415ELavtbuL._SL1000_.png",

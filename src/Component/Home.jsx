@@ -4,12 +4,10 @@ import Car_img1 from "../miscellaneous/corousel_1.png";
 import Car_img2 from "../miscellaneous/corousel_2.png";
 import Car_img3 from "../miscellaneous/corousel_3.png";
 import { NavLink } from "react-router-dom";
-import { HomeData } from "./Store";
 
-import { Home_Carousel } from "./Carousel";
+import { HomeCarousel } from "./Carousel";
 function Home() {
   let Car_image2 = [Car_img1, Car_img2, Car_img3];
-  let home_Data = useContext(HomeData);
 
   return (
     <div>
@@ -24,7 +22,7 @@ function Home() {
         <NavLink>IPod</NavLink>
         <NavLink>Accessories</NavLink>
       </div>
-      <Home_Carousel image2={Car_image2} />
+      <HomeCarousel image2={Car_image2} />
     </div>
   );
 }

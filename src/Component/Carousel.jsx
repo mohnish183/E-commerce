@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [width, setWidth] = useState(50);
+
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -42,7 +42,7 @@ const Carousel = ({ images }) => {
 };
 
 export default Carousel;
-function Home_Carousel({ image2 }) {
+function HomeCarousel({ image2 }) {
   console.log(image2);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -80,4 +80,4 @@ function Home_Carousel({ image2 }) {
     </div>
   );
 }
-export { Home_Carousel };
+export { HomeCarousel };
