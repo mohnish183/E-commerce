@@ -1,7 +1,38 @@
 import React from "react";
-
+import { StoreData } from "./Store";
+import { useContext } from "react";
+import "../ComponentUI/Accessories.css";
+import { NavLink } from "react-router-dom";
 function Accessories() {
-  return <div>accessories</div>;
+  const accData = useContext(StoreData);
+  console.log(accData);
+  return (
+    <div>
+      <div className="acc__container">
+        <div className="acc_data_container">
+          {accData.ecomData
+            .filter((item, index) => item.category === "accessories")
+            .map((item, index) => {
+              return (
+                <>
+                  <div className="acc_item_container">
+                    <div className="acc_item-img">
+                      <NavLink to={`${item.id}`}>
+                        {" "}
+                        <img src={item.img} alt="not found" />
+                      </NavLink>
+                    </div>
+                    <h1>{item.name}</h1>
+                    <h6>{item.price}</h6>
+                    <h6>{item.rating}</h6>
+                  </div>
+                </>
+              );
+            })}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Accessories;

@@ -1,21 +1,22 @@
 import React from "react";
 import { StoreData } from "./Store";
 import { useContext } from "react";
-import "../ComponentUI/Iphone.css";
+import "../ComponentUI/Watch.css";
 import { NavLink } from "react-router-dom";
-function Iphone() {
-  const iphoneData = useContext(StoreData);
+function Watch() {
+  const watchData = useContext(StoreData);
+  console.log(watchData.ecomData);
   return (
     <div>
-      <div className="iphone__container">
-        <div className="iphone_data_container">
-          {iphoneData.ecomData
-            .filter((item, index) => item.category === "iphone")
+      <div className="watch__container">
+        <div className="watch_data_container">
+          {watchData.ecomData
+            .filter((item, index) => item.category === "watch")
             .map((item, index) => {
               return (
                 <>
-                  <div className="iphone_item_container">
-                    <div className="iphone_item-img">
+                  <div className="watch_item_container">
+                    <div className="watch_item-img">
                       <NavLink to={`${item.id}`}>
                         {" "}
                         <img src={item.img} alt="not found" />
@@ -34,4 +35,4 @@ function Iphone() {
   );
 }
 
-export default Iphone;
+export default Watch;

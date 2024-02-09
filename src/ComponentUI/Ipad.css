@@ -1,0 +1,33 @@
+.ipad__container {
+  display: flex;
+  justify-content: center;
+}
+.ipad_data_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  gap: 2vh 6vw;
+  margin-top: 10vh;
+}
+
+.ipad_item_container {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+.ipad_item-img {
+  display: flex;
+  justify-content: center;
+}
+.ipad_item-img img {
+  width: 12vw;
+  height: 30vh;
+}
+.ipad_item_container h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.ipad_item_container h6 {
+  text-align: center;
+}

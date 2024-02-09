@@ -1,0 +1,28 @@
+.mac__container {
+  display: flex;
+  justify-content: center;
+}
+.mac_data_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  gap: 2vh 6vw;
+  margin-top: 10vh;
+}
+
+.mac_item_container {
+  display: flex;
+  flex-direction: column;
+}
+.mac_item-img img {
+  width: 20vw;
+  height: 30vh;
+}
+.mac_item_container h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.mac_item_container h6 {
+  text-align: center;
+}
