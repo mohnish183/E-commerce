@@ -4,7 +4,7 @@ import Cart from "./Cart";
 import DynamicItem from "./DynamicItem";
 export const CartContext = createContext();
 export const CartStore = () => {
-  const [cartItems, setCartItems] = useState(["hello"]);
+  const [cartItems, setCartItems] = useState([]);
   const addToCart = (itemId) => {
     setCartItems([...cartItems, itemId]);
     console.log(cartItems);
