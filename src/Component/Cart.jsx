@@ -65,7 +65,7 @@ function Cart() {
       navigate("/login");
     } else {
       axios
-        .get("http://localhost:8000/pages/dashboard", {
+        .get("https://backend-ecomerce-mq1c.onrender.com/pages/dashboard", {
           headers: {
             authorization: `Bearer ${token}`,
           },

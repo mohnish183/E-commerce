@@ -11,7 +11,10 @@ function Register() {
   const handleRegister = () => {
     try {
       const response = axios
-        .post("http://localhost:8000/pages/register", { email, password })
+        .post("https://backend-ecomerce-mq1c.onrender.com/pages/register", {
+          email,
+          password,
+        })
         .then((res) => {
           console.log(res.data, "register data");
           if (res.data.msg === "This email is already exist") {

@@ -14,7 +14,10 @@ function Login() {
   const handleRegister = () => {
     try {
       const response = axios
-        .post("http://localhost:8000/pages/login", { email, password })
+        .post("https://backend-ecomerce-mq1c.onrender.com/pages/login", {
+          email,
+          password,
+        })
         .then((res) => {
           console.log(res.data, "register data");
           if (res.data === "user is not register") {
