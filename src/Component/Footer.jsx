@@ -1,12 +1,12 @@
 import React from "react";
 import "../ComponentUI/Footer.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import {
-//   faFacebook,
-//   faTwitter,
-//   faSquareInstagram,
-// } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <>
@@ -61,10 +61,11 @@ function Footer() {
             <div className="sb__footer-links_div">
               <h4>Comming soon on</h4>
               <div className="socialmedia">
-                {/* <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faFacebook} />
                 <FontAwesomeIcon icon={faEnvelope} />
+
                 <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faSquareInstagram} /> */}
+                <FontAwesomeIcon icon={faSquareInstagram} />
               </div>
             </div>
           </div>

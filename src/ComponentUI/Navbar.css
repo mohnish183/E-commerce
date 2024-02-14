@@ -1,14 +1,28 @@
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2vh;
+  margin: 0 20vh;
+  padding: 2vh;
+}
+.register-part {
+  display: flex;
+  column-gap: 5vh;
+}
+
+.fa-nav {
+  width: 5vw;
 }
 .nav-bar {
   display: flex;
   justify-content: center;
   column-gap: 4vw;
+  padding: 2vh;
 }
-
+hr {
+  background-color: #ff3333;
+  height: 0.2vh;
+}
 .nav-bar > * {
   text-decoration: none;
   font-size: 1.2rem;

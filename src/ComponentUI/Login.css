@@ -1,0 +1,43 @@
+.logo_container_flex {
+  display: flex;
+}
+
+.login_item_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 50%;
+  height: 80vh;
+}
+
+.login_item_2 {
+  background-color: #ff3333;
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_item_content {
+  display: flex;
+  flex-direction: column;
+}
+.login_item_content button {
+  width: 10vw;
+  border-radius: 5vh;
+  padding: 1vh;
+}
+.login_item_content h1,
+.login_item_content h6 {
+  color: white;
+}
+.logo_img {
+  width: 50%;
+  height: 50vh;
+}
+
+.login_item_1 {
+  display: flex;
+  justify-content: center;
+}

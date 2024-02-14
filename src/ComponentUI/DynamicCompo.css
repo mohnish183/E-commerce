@@ -1,0 +1,38 @@
+.dynamicItem__container {
+  display: flex;
+  justify-content: center;
+}
+.dynamicItem_data_container {
+  display: flex;
+}
+.dynamicItem_item_container {
+  display: flex;
+  flex-direction: column;
+}
+.dynamicItem_item-img {
+  display: flex;
+  justify-content: center;
+}
+.dynamicItem_item-img img {
+  height: 40vh;
+  width: 18vw;
+}
+.dynamicItem_item_container h1 {
+  align-self: center;
+}
+.dynamicItem_item_container h6 {
+  align-self: center;
+}
+.btn-cart {
+  display: flex;
+  justify-content: center;
+  gap: 0 4vw;
+}
+.back_btn {
+  width: 8vw;
+  border-radius: 5vh;
+}
+.add_btn {
+  width: 8vw;
+  border-radius: 5vh;
+}

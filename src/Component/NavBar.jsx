@@ -9,6 +9,9 @@ import Accessories from "./Accessories";
 import { Route, Routes } from "react-router-dom";
 import Watch from "./Watch";
 import DynamicItem from "./DynamicItem";
+import Login from "./Login";
+import Register from "./Register";
+import Cart from "./Cart";
 
 function NavBar() {
   return (
@@ -21,11 +24,15 @@ function NavBar() {
         <Route path={"/iphone"} element={<Iphone />} />
         <Route path={"/ipad"} element={<Ipad />} />
         <Route path={"/accessories"} element={<Accessories />} />
+        <Route path={`/item/:id`} element={<DynamicItem />} />
         <Route path={`/macbook/:id`} element={<DynamicItem />} />
         <Route path={`/watch/:id`} element={<DynamicItem />} />
         <Route path={`/iphone/:id`} element={<DynamicItem />} />
         <Route path={`/ipad/:id`} element={<DynamicItem />} />
         <Route path={`/accessories/:id`} element={<DynamicItem />} />
+        <Route path={`/login`} element={<Login />} />
+        <Route path={`/register`} element={<Register />} />
+        <Route path={`/dashboard`} element={<Cart />} />
       </Routes>
     </Store>
   );

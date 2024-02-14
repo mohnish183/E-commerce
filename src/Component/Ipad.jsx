@@ -1,12 +1,18 @@
 import React from "react";
+import img1 from "../Web/apple-carousel.jpg";
+import img2 from "../Web/apple-carousel1.webp";
+import img3 from "../Web/apple-carousel2.jpg";
+import Carousel from "./Carousel";
 import { StoreData } from "./Store";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "../ComponentUI/Ipad.css";
 function Ipad() {
   const ipadData = useContext(StoreData);
+  let images = [img1, img2, img3];
   return (
     <div>
+      <Carousel images={images} />
       <div className="ipad__container">
         <div className="ipad_data_container">
           {ipadData.ecomData

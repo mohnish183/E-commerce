@@ -4,6 +4,7 @@ import { createContext, useState, useEffect } from "react";
 export const StoreData = createContext();
 function Store(props) {
   const [ecomData, setEcomData] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const result = await fetch(
@@ -17,7 +18,7 @@ function Store(props) {
 
   return (
     <div>
-      <StoreData.Provider value={{ ecomData }}>
+      <StoreData.Provider value={{ ecomData, cartItems, setCartItems }}>
         {props.children}
       </StoreData.Provider>
     </div>

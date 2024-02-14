@@ -6,8 +6,13 @@ import Car_img3 from "../miscellaneous/corousel_3.png";
 import support from "../miscellaneous/support.png";
 import shipping from "../miscellaneous/shipping.png";
 import refund from "../miscellaneous/refund.png";
+import img1 from "../Web/apple-carousel.jpg";
+import img2 from "../Web/apple-carousel1.webp";
+import img3 from "../Web/apple-carousel2.jpg";
+
 import { NavLink } from "react-router-dom";
 import { HomeCarousel } from "./Carousel";
+import Carousel from "./Carousel";
 import { useState, useContext } from "react";
 import { StoreData } from "./Store";
 
@@ -22,8 +27,11 @@ function Home() {
   const setItemName = (name) => {
     setName(name);
   };
+  let images = [img1, img2, img3];
   return (
     <div>
+      {" "}
+      <Carousel images={images} />
       <div className="heading">
         <h2>Best Seller</h2>
       </div>
@@ -49,7 +57,7 @@ function Home() {
                 <>
                   <div className="home_item_container">
                     <div className="home_item-img">
-                      <NavLink to={`${item.id}`}>
+                      <NavLink to={`/item/${item.id}`}>
                         {" "}
                         <img src={item.img} style={style} alt="not found" />
                       </NavLink>

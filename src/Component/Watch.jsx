@@ -1,4 +1,8 @@
 import React from "react";
+import img1 from "../Web/apple-carousel.jpg";
+import img2 from "../Web/apple-carousel1.webp";
+import img3 from "../Web/apple-carousel2.jpg";
+import Carousel from "./Carousel";
 import { StoreData } from "./Store";
 import { useContext } from "react";
 import "../ComponentUI/Watch.css";
@@ -6,8 +10,10 @@ import { NavLink } from "react-router-dom";
 function Watch() {
   const watchData = useContext(StoreData);
   console.log(watchData.ecomData);
+  let images = [img1, img2, img3];
   return (
     <div>
+      <Carousel images={images} />
       <div className="watch__container">
         <div className="watch_data_container">
           {watchData.ecomData
