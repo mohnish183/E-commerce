@@ -1,6 +1,7 @@
 .dynamicItem__container {
   display: flex;
   justify-content: center;
+  margin: 10vh 0 20vh;
 }
 .dynamicItem_data_container {
   display: flex;
@@ -35,4 +36,25 @@
 .add_btn {
   width: 8vw;
   border-radius: 5vh;
+}
+
+/*  */
+
+.dynamic_scroll_flex_container {
+  display: flex;
+  margin-bottom: 20vh;
+}
+.dynamic_scroll_item {
+  width: 40vw;
+}
+.dynamicItem_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dynamicItem_txt h1 {
+  align-self: center;
+}
+.dynamicItem_txt h6 {
+  align-self: center;
 }

@@ -8,7 +8,7 @@ function Store(props) {
   useEffect(() => {
     async function fetchData() {
       const result = await fetch(
-        "https://backend-ecomerce-mq1c.onrender.com/api/ecom"
+        "https://backend-ecom-zrif.onrender.com/api/ecom"
       );
       const res = await result.json();
       setEcomData(res);

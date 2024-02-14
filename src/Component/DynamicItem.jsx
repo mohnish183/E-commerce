@@ -73,14 +73,18 @@ function DynamicItem() {
             }
             return (
               <>
-                <div className="dynamicItem_item-img">
-                  <NavLink to={`/item/${item.id}`}>
-                    <img src={item.img} style={style} alt="not found" />
-                  </NavLink>
+                <div className="dynamic_scroll_item">
+                  <div className="dynamicItem_item-img">
+                    <NavLink to={`/item/${item.id}`}>
+                      <img src={item.img} style={style} alt="not found" />
+                    </NavLink>
+                  </div>
+                  <div className="dynamicItem_txt">
+                    <h1>{item.name}</h1>
+                    <h6>{item.price}</h6>
+                    <h6>{item.rating}</h6>
+                  </div>
                 </div>
-                <h1>{item.name}</h1>
-                <h6>{item.price}</h6>
-                <h6>{item.rating}</h6>
               </>
             );
           })}

@@ -14,7 +14,7 @@ function Login() {
   const handleRegister = () => {
     try {
       const response = axios
-        .post("https://backend-ecomerce-mq1c.onrender.com/pages/login", {
+        .post("https://backend-ecom-zrif.onrender.com/pages/login", {
           email,
           password,
         })

@@ -65,7 +65,7 @@ function Cart() {
       navigate("/login");
     } else {
       axios
-        .get("https://backend-ecomerce-mq1c.onrender.com/pages/dashboard", {
+        .get("https://backend-ecom-zrif.onrender.com/pages/dashboard", {
           headers: {
             authorization: `Bearer ${token}`,
           },
