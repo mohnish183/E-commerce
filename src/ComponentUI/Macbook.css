@@ -26,3 +26,38 @@
 .mac_item_container h6 {
   text-align: center;
 }
+/* Media Query for screens smaller than 768px */
+@media screen and (min-width: 840px) and (max-width: 1080px) {
+  .mac_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+  .mac_item_container {
+    width: 30vw;
+  }
+}
+@media (max-width: 840px) {
+  .mac_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+  .mac_item_container {
+    width: 30vw;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .mac_data_container {
+    width: 90vw;
+    justify-content: center;
+  }
+  .mac_item_container {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .mac_item-img img {
+    width: 80vw;
+    height: auto;
+  }
+}

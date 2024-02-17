@@ -32,3 +32,59 @@ hr {
     text-decoration: underline;
   }
 }
+.fa {
+  display: none;
+}
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .register-part {
+    margin-top: 2vh;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .fa-nav {
+    width: 10vw;
+  }
+
+  .nav-bar {
+    column-gap: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .fa {
+    display: inline-block;
+    width: 4vw;
+    position: relative;
+    left: 90%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .nav-bar * {
+    font-size: 1.5rem;
+  }
+}
+.childnodeOn {
+  height: 100%;
+
+  flex-direction: column;
+}
+.childnodeOff {
+  display: none;
+  background-color: red;
+  height: 100%;
+}
+.childNode {
+  display: none;
+}
+.childNodeDisplay {
+  display: inline;
+  text-align: center;
+}

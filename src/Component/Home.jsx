@@ -50,9 +50,17 @@ function Home() {
             .filter((item, index) => item.category === name)
             .map((item, index) => {
               let style = {};
-              if (item.category === "mac") {
-                style = { width: "20vw", height: "30vh" };
-              }
+              window.addEventListener("resize", (e) => {
+                if (window.matchMedia(`(max-width:600px)`).matches) {
+                  if (item.category === "mac") {
+                    style = { width: "5vw", height: "5vh" };
+                  }
+                }
+              });
+              // if (item.category === "mac") {
+              //   style = { width: "20vw", height: "30vh" };
+
+              // }
               return (
                 <>
                   <div className="home_item_container">

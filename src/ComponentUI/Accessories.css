@@ -31,3 +31,30 @@
 .acc_item_container h6 {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .acc_data_container {
+    width: 90vw;
+  }
+  .acc_item_container {
+    width: 40vw;
+  }
+  .acc_item-img img {
+    width: 20vw;
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .acc_data_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .acc_item_container {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .acc_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+}

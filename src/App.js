@@ -1,4 +1,3 @@
-import Carousel from "./Component/Carousel";
 import NavBar from "./Component/NavBar";
 // import img1 from "./miscellaneous/2_corousel.png";
 // import img2 from "./miscellaneous/2_corousel.svg";

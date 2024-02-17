@@ -24,18 +24,25 @@ function DynamicItem() {
           {dynamicItemData.ecomData
             .filter((item, index) => index === parseInt(id) - 1)
             .map((item, index) => {
-              let style;
-              if (item.category === "mac") {
-                style = {
-                  width: "30vw",
-                  height: "40vh",
-                };
-              }
+              let style = {};
+              window.addEventListener("resize", (e) => {
+                if (window.matchMedia(`(max-width:600px)`).matches) {
+                  if (item.category === "mac") {
+                    style = { width: "5vw", height: "5vh" };
+                  }
+                }
+              });
+              // if (item.category === "mac") {
+              //   style = {
+              //     width: "30vw",
+              //     height: "40vh",
+              //   };
+              // }
               return (
                 <>
                   <div className="dynamicItem_item_container">
                     <div className="dynamicItem_item-img">
-                      <img src={item.img} style={style} alt="not found" />
+                      <img src={item.img} style={style} alt={item.category} />
                     </div>
                     <h1>{item.name}</h1>
                     <h6>{item.price}</h6>
@@ -65,18 +72,23 @@ function DynamicItem() {
           )
           .map((item, index) => {
             let style;
-            if (item.category === "mac") {
-              style = {
-                width: "20vw",
-                height: "30vh",
-              };
-            }
+            // if (item.category === "mac") {
+            //   style = {
+            //     width: "40vw",
+            //     height: "auto",
+            //   };
+            // }
             return (
               <>
                 <div className="dynamic_scroll_item">
-                  <div className="dynamicItem_item-img">
+                  <div className="dynamicItem_item-img-2">
                     <NavLink to={`/item/${item.id}`}>
-                      <img src={item.img} style={style} alt="not found" />
+                      <img
+                        className="cart_scroll_img"
+                        src={item.img}
+                        style={style}
+                        alt={item.category}
+                      />
                     </NavLink>
                   </div>
                   <div className="dynamicItem_txt">

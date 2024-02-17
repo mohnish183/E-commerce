@@ -31,3 +31,33 @@
 .ipad_item_container h6 {
   text-align: center;
 }
+/* Media Query for screens smaller than 768px */
+@media (max-width: 840px) {
+  .ipad_data_container {
+    width: 90vw;
+  }
+  .ipad_item_container {
+    width: 40vw;
+  }
+  .ipad_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .ipad_data_container {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ipad_item_container {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .ipad_item-img img {
+    width: 80vw;
+    height: auto;
+  }
+}

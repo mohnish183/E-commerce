@@ -16,3 +16,39 @@
   height: 60vh;
   width: 80vw;
 }
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 60vh;
+}
+
+/* Add additional styles as needed */
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .carousel__img {
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .carousel__img {
+    height: 30vh;
+    width: 90vw;
+  }
+}

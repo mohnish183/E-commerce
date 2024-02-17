@@ -27,3 +27,45 @@
 .watch_item_container h6 {
   text-align: center;
 }
+
+/* Media Query for screens smaller than 768px */
+@media screen and (min-width: 840px) and (max-width: 1080px) {
+  .watch_data_container {
+    width: 90vw;
+    justify-content: start;
+  }
+  .watch_item-img img {
+    width: 25vw;
+    height: auto;
+  }
+}
+@media (max-width: 840px) {
+  .watch_data_container {
+    width: 90vw;
+    justify-content: center;
+  }
+  .watch_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .watch_data_container {
+    width: 90vw;
+    justify-content: center;
+  }
+  .watch_item_container {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .watch_item-img {
+    display: flex;
+    justify-content: center;
+  }
+  .watch_item-img img {
+    width: 50vw;
+    height: auto;
+  }
+}

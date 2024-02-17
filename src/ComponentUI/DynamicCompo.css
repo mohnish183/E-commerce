@@ -58,3 +58,137 @@
 .dynamicItem_txt h6 {
   align-self: center;
 }
+/* Media Query for screens smaller than 768px */
+@media screen and (min-width: 840px) and (max-width: 1080px) {
+  .dynamicItem_item-img img {
+    width: 40vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="accessories"] {
+    width: 25vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .dynamicItem_item-img-2 img {
+    width: 25vw;
+    height: auto;
+  }
+  .back_btn,
+  .add_btn {
+    width: 20vw;
+  }
+  .dynamic_scroll_flex_container {
+    flex-direction: row;
+    row-gap: 5vh;
+    justify-content: space-evenly;
+  }
+  .dynamic_scroll_item {
+    width: 30vw;
+  }
+  .dynamicItem_txt h1 {
+    align-self: center;
+    font-size: 5vh;
+
+    text-align: center;
+  }
+  .dynamicItem_item-img-2 img[alt="ipad"] {
+    width: 25vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .dynamicItem_item-img img {
+    width: 60vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="watch"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="iphone"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="ipad"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="accessories"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .dynamicItem_item-img-2 img {
+    width: 60vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="watch"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="iphone"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="ipad"] {
+    width: 40vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="accessories"] {
+    width: 40vw;
+    height: auto;
+  }
+  .back_btn,
+  .add_btn {
+    width: 20vw;
+  }
+  .dynamic_scroll_flex_container {
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .dynamic_scroll_item {
+    width: 100vw;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .dynamicItem_item-img img {
+    width: 80vw;
+    height: auto;
+  }
+  .dynamicItem_item-img img[alt="accessories"] {
+    width: 40vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .dynamicItem_item-img-2 img {
+    width: 80vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="watch"] {
+    width: 30vw;
+    height: auto;
+  }
+  .dynamicItem_item-img-2 img[alt="accessories"] {
+    width: 40vw;
+    height: auto;
+  }
+  .back_btn,
+  .add_btn {
+    width: 40vw;
+  }
+  .dynamicItem_txt h1 {
+    text-align: center;
+  }
+}

@@ -26,3 +26,43 @@
 .iphone_item_container h6 {
   text-align: center;
 }
+@media screen and (min-width: 840px) and (max-width: 1080px) {
+  .iphone_item_container {
+    margin: 0 2vh;
+  }
+  .iphone_data_container {
+    justify-content: flex-start;
+    margin: 2vh;
+    gap: 2vh 2vw;
+  }
+  .iphone_item-img img {
+    width: 15vw;
+    height: 30vh;
+  }
+}
+@media (max-width: 840px) {
+  .iphone_item-img img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .iphone_data_container {
+    width: 90vw;
+    justify-content: center;
+  }
+  .iphone_item_container {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .iphone_item-img {
+    display: flex;
+    justify-content: center;
+  }
+  .iphone_item-img img {
+    width: 50vw;
+    height: 60vh;
+  }
+}
