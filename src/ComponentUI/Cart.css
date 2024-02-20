@@ -21,6 +21,9 @@
   display: flex;
   justify-content: center;
 }
+.cart_img * {
+  width: 50%;
+}
 .button_section {
   display: flex;
   gap: 10vh;
@@ -37,7 +40,7 @@ button {
   width: 20vh;
   height: auto;
 }
-@media (max-width: 840px) {
+@media (max-width: 900px) {
   .cart_container {
     flex-direction: column;
     row-gap: 25vh;
@@ -48,6 +51,7 @@ button {
     display: flex;
     justify-content: center;
   }
+
   .cart_txt {
     display: flex;
     flex-direction: column;
@@ -81,6 +85,17 @@ button {
     width: 16vh;
     height: auto;
     font-size: 0.75rem;
+  }
+  .cart_img img {
+    width: 50%;
+  }
+}
+@media (max-width: 380px) {
+  .button_section * {
+    border-radius: 4vh;
+    width: 25vh;
+    height: auto;
+    font-size: 0.6rem;
   }
 }
 .payment-animation {
