@@ -53,13 +53,16 @@ function Cart() {
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
   const [itemCounts, setItemCounts] = useState({});
-  let [cartItemArray, setCartItemArray] = useState([]);
+
   const [totalPrice, setTotalPrice] = useState(0);
 
   const CartItem = useContext(StoreData);
+  let [cartItemArray, setCartItemArray] = useState([]);
   console.log(CartItem);
   console.log(CartItem.ecomData[6].price);
-  console.log(CartItem.cartItems);
+  // console.log(CartItem.cartItems);
+  // cartItemArray = CartItem.cartItems;
+
   cartItemArray = CartItem.cartItems;
   console.log(cartItemArray);
   //Get id from route parameters
@@ -111,16 +114,23 @@ function Cart() {
     // Reset payment completion after 3 seconds
     setTimeout(() => {
       setPaymentCompleted(false);
+
       console.log("first");
       setTimeout(() => {
-        navigate("/");
         console.log("second");
-      }, 1000);
-      setTimeout(() => {
+        // cartItemArray.splice(0, cartItemArray.length);
+        // setCartItemArray([...cartItemArray]); // Update the state with the modified array
+        setCartItemArray(cartItemArray.splice(0, cartItemArray.length));
+        console.log(cartItemArray, "new array");
+
         // CartItem.cartItems = [];
-        setCartItemArray([]);
-      }, 4000);
-    }, 6000);
+        console.log("third");
+        setTimeout(() => {
+          navigate("/");
+        }, 1000);
+        // navigate("/");
+      }, 3000);
+    }, 2000);
   };
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -145,8 +155,11 @@ function Cart() {
 
   return (
     <div>
-      <h1>Dashboard</h1>
-      <p>{message}</p>
+      <div className="cart_heading">
+        <h1>Welcome to Cart Section</h1>
+        <p>{message}</p>
+      </div>
+
       <div className="cart_container">
         <div className="cart_item_block">
           {CartItem.ecomData
@@ -166,18 +179,20 @@ function Cart() {
                       <h6>{item.price}</h6>
                       <h6>{item.rating}</h6>
                     </div>
-                    <button onClick={() => removeItem(item.id)}>
-                      Remove Item
-                    </button>
-                    <button onClick={() => increaseItemCount(item.id)}>
-                      Increase
-                    </button>
-                    <button onClick={() => deccreaseItemCount(item.id)}>
-                      Decrease
-                    </button>
-                    <span className="item-count">
-                      {itemCounts[item.id] || 0}
-                    </span>
+                    <div className="button_section">
+                      <button onClick={() => removeItem(item.id)}>
+                        Remove Item
+                      </button>
+                      <button onClick={() => increaseItemCount(item.id)}>
+                        Increase
+                      </button>
+                      <button onClick={() => deccreaseItemCount(item.id)}>
+                        Decrease
+                      </button>
+                      <span className="item-count">
+                        {itemCounts[item.id] || 0}
+                      </span>
+                    </div>
                   </div>
                 </>
               );

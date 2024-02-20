@@ -191,4 +191,8 @@
   .dynamicItem_txt h1 {
     text-align: center;
   }
+  .dynamicItem_item_container h1 {
+    align-self: center;
+    text-align: center;
+  }
 }
