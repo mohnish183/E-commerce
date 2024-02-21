@@ -35,9 +35,14 @@
   justify-content: center;
   align-items: center;
 }
-button {
+.button_section * {
   border-radius: 4vh;
   width: 20vh;
+  height: auto;
+}
+.checkout_btn {
+  border-radius: 4vh;
+  width: 30vh;
   height: auto;
 }
 @media (max-width: 900px) {
@@ -70,6 +75,11 @@ button {
     width: 20vh;
     height: auto;
   }
+  .checkout_btn {
+    border-radius: 4vh;
+    width: 30vh;
+    height: auto;
+  }
 }
 @media (max-width: 520px) {
   .cart_container {
@@ -86,12 +96,24 @@ button {
     height: auto;
     font-size: 0.75rem;
   }
+  .checkout_btn {
+    border-radius: 4vh;
+    width: 25vh;
+    height: auto;
+    font-size: 0.75rem;
+  }
   .cart_img img {
     width: 50%;
   }
 }
 @media (max-width: 380px) {
   .button_section * {
+    border-radius: 4vh;
+    width: 25vh;
+    height: auto;
+    font-size: 0.6rem;
+  }
+  .checkout_btn {
     border-radius: 4vh;
     width: 25vh;
     height: auto;

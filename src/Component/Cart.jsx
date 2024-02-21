@@ -200,8 +200,10 @@ function Cart() {
         </div>
         <div className="cart_item_checkout">
           <h1>Checkout Product</h1>
-          <h4>Total Price{totalPrice}</h4>
-          <button onClick={handlePayment}>Complete Payment</button>
+          <h4>Total Price = {totalPrice}</h4>
+          <button className="checkout_btn" onClick={handlePayment}>
+            Complete Payment
+          </button>
           {paymentCompleted && (
             <div className="payment-animation">Payment Completed!</div>
           )}
